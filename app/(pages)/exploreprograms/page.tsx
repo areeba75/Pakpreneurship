@@ -1,13 +1,15 @@
 "use client";
 import React from "react";
-import Image from "next/image";
+// import Image from "next/image";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Button } from "@/components/ui/button";
 // import { Input } from "@/components/ui/input";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 // import { MdOutlineSortByAlpha } from "react-icons/md";
 import { IoIosArrowDropright } from "react-icons/io";
-import { Checkbox } from "@/components/ui/checkbox";
+// import { Checkbox } from "@/components/ui/checkbox";
+import Image from "next/image";
+// import { FileSearch } from "lucide-react";
 
 const Page = () => {
   // const courseArr = [
@@ -277,19 +279,19 @@ const Page = () => {
 
   return (
     <>
-      <div className="w-[95%] mx-auto ">
+      <div className="lg:w-[95%] mx-auto ">
         <section>
           <div
-            className="relative w-full bg-cover bg-center bg-no-repeat rounded-3xl h-[300px] flex flex-col justify-center items-center text-white before:absolute before:inset-0 before:bg-black/60"
+            className="relative w-full bg-cover bg-center bg-no-repeat rounded-3xl h-[230px] lg:h-[300px] flex flex-col justify-end lg:justify-center items-center text-white before:absolute before:inset-0 before:bg-black/60"
             style={{
               backgroundImage: "url('/exploreprograms/bg-explore.png')",
             }}
           >
-            <div className="z-10 text-center">
+            <div className="z-10 text-center py-10">
               <h1>
                 Explore Our <span className="text-green-600">Programs!</span>
               </h1>
-              <div>
+              <div className="w-[90%]  mx-auto">
                 <p>
                   Find the right program to kickstart your practical journey.
                 </p>
@@ -302,7 +304,7 @@ const Page = () => {
             <Button
               variant={"ghost"}
               size={"sm"}
-              className="md:hidden mb-4 mx-4  bg-black border-2 border-gray-200"
+              className="md:hidden my-3 mx-1  bg-black border-2 border-gray-200"
             >
               {/* <Menu /> */}
               <div className="flex items-center w-[100px] justify-between ">
@@ -321,196 +323,171 @@ const Page = () => {
             </Button>
           </SheetTrigger>
           <SheetContent side={"left"} className="p-0">
-            <div className="p-2">
-              <section className=" ">
-                <div className="flex bg-[#313131]  mx-2 mb-2 w-[80%] px-2 rounded-lg">
+            <div className="px-2 py-5 bg-[#313131] text-[#F1F1F1] ">
+              <section className=" bg-[#313131] text-[#F1F1F1]">
+                {/* <div className="flex bg-[#313131]  mb-2 w-[60%] px-2 rounded-full">
                   <input
                     placeholder="Search Scholarships..."
                     name="search"
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
-                    className="border-none bg-[#313131] text-white outline-none focus:ring-0 placeholder:text-[12px]"
+                    className="border-none bg-[#313131] text-white outline-none focus:ring-0 placeholder:text-[12px] py-2 rounded-full"
                   />
                   <Image
-                    src="/search.svg"
+                    src="/icons/search.svg"
                     width={16}
                     height={16}
                     alt="favourite"
-                    className="2xl:w-[40px] 2xl:h-[40px] ml-2"
+                    className="2xl:w-[40px] 2xl:h-[40px] bg-[#313131]"
                   />
+                </div> */}
+                <div className="bg-[#313131] p-2 rounded-xl">
+                  <label className="flex items-center gap-2 bg-black p-2 rounded-xl">
+                    {/* <FileSearch className="text-white text-lg" /> */}
+                    <Image
+                      src="/icons/search.svg"
+                      width={20}
+                      height={20}
+                      alt="search"
+                    />
+                    <input
+                      type="text"
+                      placeholder="Search Programs"
+                      className="bg-transparent text-white placeholder-gray-400 outline-none w-full"
+                    />
+                  </label>
                 </div>
                 <hr className="mx-4" />
-                <ScrollArea className="p-4 md:h-full h-[500px]">
-                  <p className="text-xl">Country:</p>
-                  <div className="">
-                    <ul className="py-4 space-y-6">
-                      <li className="flex justify-between ">
-                        <div className="flex gap-2">
-                          {/* <Image
-                               src="/usa.png"
-                               width={20}
-                               height={20}
-                               alt="favourite"
-                               className="2xl:w-[42px] 2xl:h-[42px] ml-2"
-                             /> */}
-                          <label htmlFor="us">United States</label>
+
+                <ScrollArea className="p-4 h-[500px] md:h-full overflow-auto bg-[#313131] text-[#F1F1F1]">
+                  <h6 className="font-bold">Category:</h6>
+                  <ul className="py-4 space-y-4 md:space-y-6">
+                    {[
+                      { name: "Startup Launchpad", label: "Startup Launchpad" },
+                      {
+                        name: "Innovation Accelerator",
+                        label: "Innovation Accelerator",
+                      },
+                      {
+                        name: "Entrepreneur Bootcamp",
+                        label: "Entrepreneur Bootcamp",
+                      },
+                      {
+                        name: "Womenpreneur Initiative",
+                        label: "Womenpreneur Initiative",
+                      },
+                      {
+                        name: "Tech Ventures Program",
+                        label: "Tech Ventures Program",
+                      },
+                      {
+                        name: "Creative Ideation Lab",
+                        label: "Creative Ideation Lab",
+                      },
+                      {
+                        name: "Social Impact Hub",
+                        label: "Social Impact Hub",
+                      },
+                      {
+                        name: "dePitch Perfect Academynmark",
+                        label: "Pitch Perfect Academy",
+                      },
+                      {
+                        name: "Business Growth Studio",
+                        label: "Business Growth Studio",
+                      },
+                      {
+                        name: "Young Innovators Program",
+                        label: "Young Innovators Program",
+                      },
+                    ].map((country) => (
+                      <li
+                        key={country.name}
+                        className="flex justify-between items-center"
+                      >
+                        <div className="flex gap-2 items-center">
+                          <label htmlFor={country.name} className="">
+                            {country.label}
+                          </label>
                         </div>
-                        <Checkbox />
+                        <input
+                          type="checkbox"
+                          name={country.name}
+                          value={country.name}
+                          onChange={handleCheckboxChange}
+                          className="w-3 h-3"
+                        />
                       </li>
-                      <li className="flex justify-between ">
-                        <div className="flex gap-2">
-                          {/* <Image
-                               src="/china.png"
-                               width={20}
-                               height={20}
-                               alt="favourite"
-                               className="2xl:w-[42px] 2xl:h-[42px] ml-2"
-                             /> */}
-                          <label htmlFor="us">China</label>
-                        </div>
-                        <Checkbox />
+                    ))}
+                  </ul>
+                  <h6>Level:</h6>
+                  <ul className="py-4 space-y-4 md:space-y-6">
+                    {["Beginner", "Intermediate", "Advance"].map((program) => (
+                      <li
+                        key={program}
+                        className="flex justify-between items-center"
+                      >
+                        <label htmlFor={program.toLowerCase()} className="">
+                          {program}
+                        </label>
+                        <input
+                          type="checkbox"
+                          name={program.toLowerCase()}
+                          value={program.toLowerCase()}
+                          onChange={handleInfoChange}
+                          className="w-3 h-3"
+                        />
                       </li>
-                      <li className="flex justify-between ">
-                        <div className="flex gap-2">
-                          {/* <Image
-                               src="/canada.png"
-                               width={20}
-                               height={20}
-                               alt="favourite"
-                               className="2xl:w-[42px] 2xl:h-[42px] ml-2"
-                             /> */}
-                          <label htmlFor="us">Canada</label>
-                        </div>
-                        <Checkbox />
-                      </li>
-                      <li className="flex justify-between ">
-                        <div className="flex gap-2">
-                          {/* <Image
-                               src="/italy.png"
-                               width={20}
-                               height={20}
-                               alt="favourite"
-                               className="2xl:w-[42px] 2xl:h-[42px] ml-2"
-                             /> */}
-                          <label htmlFor="us">Italy</label>
-                        </div>
-                        <Checkbox />
-                      </li>
-                      <li className="flex justify-between ">
-                        <div className="flex gap-2">
-                          {/* <Image
-                               src="/uk.png"
-                               width={20}
-                               height={20}
-                               alt="favourite"
-                               className="2xl:w-[42px] 2xl:h-[42px] ml-2"
-                             /> */}
-                          <label htmlFor="us">United Kingdom</label>
-                        </div>
-                        <Checkbox />
-                      </li>
-                      <li className="flex justify-between ">
-                        <div className="flex gap-2">
-                          {/* <Image
-                               src="/ireland.png"
-                               width={20}
-                               height={20}
-                               alt="favourite"
-                               className="2xl:w-[42px] 2xl:h-[42px] ml-2"
-                             /> */}
-                          <label htmlFor="us">Ireland</label>
-                        </div>
-                        <Checkbox />
-                      </li>
-                      <li className="flex justify-between ">
-                        <div className="flex gap-2">
-                          {/* <Image
-                               src="/new-zealand.png"
-                               width={20}
-                               height={20}
-                               alt="favourite"
-                               className="2xl:w-[42px] 2xl:h-[42px] ml-2"
-                             /> */}
-                          <label htmlFor="us">New Zealand</label>
-                        </div>
-                        <Checkbox />
-                      </li>
-                      <li className="flex justify-between ">
-                        <div className="flex gap-2">
-                          {/* <Image
-                               src="/denmark.png"
-                               width={20}
-                               height={20}
-                               alt="favourite"
-                               className="2xl:w-[42px] 2xl:h-[42px] ml-2"
-                             /> */}
-                          <label htmlFor="us">Denmark</label>
-                        </div>
-                        <Checkbox />
-                      </li>
-                      <li className="flex justify-between ">
-                        <div className="flex gap-2">
-                          {/* <Image
-                               src="/france.png"
-                               width={20}
-                               height={20}
-                               alt="favourite"
-                               className="2xl:w-[42px] 2xl:h-[42px] ml-2"
-                             /> */}
-                          <label htmlFor="us">France</label>
-                        </div>
-                        <Checkbox />
-                      </li>
-                    </ul>
-                    <p className="text-xl">Programs:</p>
-                    <ul className="py-4 space-y-6">
-                      <li className="flex justify-between ">
-                        <label htmlFor="us">Bachelors</label>
-                        <Checkbox />
-                      </li>
-                      <li className="flex justify-between ">
-                        <label htmlFor="us">Master</label>
-                        <Checkbox />
-                      </li>
-                      <li className="flex justify-between ">
-                        <label htmlFor="us">PhD</label>
-                        <Checkbox />
-                      </li>
-                    </ul>
-                    <p className="text-xl">Scholarship Type:</p>
-                    <ul className="py-4 space-y-6">
-                      <li className="flex justify-between ">
-                        <label htmlFor="us">Fully Funded </label>
-                        <Checkbox />
-                      </li>
-                      <li className="flex justify-between ">
-                        <label htmlFor="us">Partial Funded</label>
-                        <Checkbox />
-                      </li>
-                    </ul>
-                    <p className="text-xl">Application Deadline:</p>
-                    <ul className="py-4 space-y-6">
-                      <li className="flex justify-between ">
-                        <label htmlFor="us">Jan,2024</label>
-                        <Checkbox />
-                      </li>
-                      <li className="flex justify-between ">
-                        <label htmlFor="us">Feb,2024</label>
-                        <Checkbox />
-                      </li>
-                      <li className="flex justify-between ">
-                        <label htmlFor="us">Mar,2024</label>
-                        <Checkbox />
-                      </li>
-                    </ul>
-                  </div>
+                    ))}
+                  </ul>
+                  <h6>Duration:</h6>
+                  <ul className="py-4 space-y-4 md:space-y-6">
+                    {["1 Month", "2 Month", "3 Month", "5 Month", "1 Year"].map(
+                      (type) => (
+                        <li
+                          key={type}
+                          className="flex justify-between items-center"
+                        >
+                          <label htmlFor={type} className="">
+                            {type}
+                          </label>
+                          <input
+                            type="checkbox"
+                            name={type}
+                            value={type}
+                            onChange={handleInfoChange}
+                            className="w-4 h-4"
+                          />
+                        </li>
+                      )
+                    )}
+                  </ul>
+                  {/* <p className="text-base md:text-xl">Application Deadline:</p> */}
+                  {/* <ul className="py-4 space-y-4 md:space-y-6">
+                {["Jan 2025", "Feb 2025", "March 2025"].map((deadline) => (
+                  <li
+                    key={deadline}
+                    className="flex justify-between items-center"
+                  >
+                    <label htmlFor={deadline} className="">
+                      {deadline}
+                    </label>
+                    <input
+                      type="checkbox"
+                      name={deadline}
+                      value={deadline}
+                      onChange={handleInfoChange}
+                    />
+                  </li>
+                ))}
+              </ul> */}
                 </ScrollArea>
               </section>
             </div>
           </SheetContent>
         </Sheet>
-        <div className="flex justify-around gap-2 ">
-          <section className="hidden md:block w-[20%] lg:w-[25%]">
+        <div className="md:flex md:justify-around md:gap-5 ">
+          <section className="hidden md:block w-[20%] md:w-[25%]">
             <div className="border-2 rounded-3xl p-4 md:p-0 bg-[#313131]">
               <div className="hidden md:flex items-center gap-2 p-4 ">
                 <Image
@@ -523,7 +500,7 @@ const Page = () => {
                 <h6 className="font-bold">Filters</h6>
               </div>
               <div className="flex justify-center">
-                <div className="flex justify-evenly bg-black rounded-lg px-3 w-[80%] ">
+                <div className="flex justify-evenly bg-black rounded-lg px-3 w-[90%] ">
                   <Image
                     src="/icons/search.svg"
                     width={16}
@@ -595,10 +572,7 @@ const Page = () => {
                       className="flex justify-between items-center"
                     >
                       <div className="flex gap-2 items-center">
-                        <label
-                          htmlFor={country.name}
-                          className="text-sm md:text-base"
-                        >
+                        <label htmlFor={country.name} className="">
                           {country.label}
                         </label>
                       </div>
@@ -619,10 +593,7 @@ const Page = () => {
                       key={program}
                       className="flex justify-between items-center"
                     >
-                      <label
-                        htmlFor={program.toLowerCase()}
-                        className="text-sm md:text-base"
-                      >
+                      <label htmlFor={program.toLowerCase()} className="">
                         {program}
                       </label>
                       <input
@@ -643,7 +614,7 @@ const Page = () => {
                         key={type}
                         className="flex justify-between items-center"
                       >
-                        <label htmlFor={type} className="text-sm md:text-base">
+                        <label htmlFor={type} className="">
                           {type}
                         </label>
                         <input
@@ -657,33 +628,14 @@ const Page = () => {
                     )
                   )}
                 </ul>
-                {/* <p className="text-base md:text-xl">Application Deadline:</p> */}
-                {/* <ul className="py-4 space-y-4 md:space-y-6">
-                {["Jan 2025", "Feb 2025", "March 2025"].map((deadline) => (
-                  <li
-                    key={deadline}
-                    className="flex justify-between items-center"
-                  >
-                    <label htmlFor={deadline} className="text-sm md:text-base">
-                      {deadline}
-                    </label>
-                    <input
-                      type="checkbox"
-                      name={deadline}
-                      value={deadline}
-                      onChange={handleInfoChange}
-                    />
-                  </li>
-                ))}
-              </ul> */}
               </ScrollArea>
             </div>
           </section>
-          <section className="md:w-[70%] w-[90%]">
+          <section className="md:w-[90%] w-full">
             {/* All University Section */}
             <div className="flex flex-col md:flex-row justify-between">
               <div className="md:py-2 flex flex-col ">
-                <h3 className="font-bold text-start">Explore Programs! </h3>
+                <h3 className="">Explore Programs! </h3>
                 <p>Showing 156 programs for startup launchpad:</p>
                 {/* <p className="text-sm">Showing Scholarships in United States:</p> */}
               </div>
@@ -718,7 +670,7 @@ const Page = () => {
 
                 <div className="p-2 flex-grow">
                   <p className="font-bold">{course.title}</p>
-                  <p className="text-sm md:text-base">{course.UniName}</p>
+                  <p className="">{course.UniName}</p>
 
                   <div className="flex justify-between flex-wrap">
                     <div className="flex items-center gap-2 mt-2">
@@ -728,7 +680,7 @@ const Page = () => {
                         width={16}
                         height={16}
                       />
-                      <p className="text-sm md:text-base text-gray-600 font-bold">
+                      <p className=" text-gray-600 font-bold">
                         {course.country}
                       </p>
                     </div>
@@ -739,7 +691,7 @@ const Page = () => {
                         width={16}
                         height={16}
                       />
-                      <p className="text-sm md:text-base text-gray-600 font-bold">
+                      <p className=" text-gray-600 font-bold">
                         {course.scholarship}
                       </p>
                     </div>
@@ -753,7 +705,7 @@ const Page = () => {
                         width={16}
                         height={16}
                       />
-                      <p className="text-sm md:text-base text-gray-600 font-bold">
+                      <p className=" text-gray-600 font-bold">
                         {course.studyLevel}
                       </p>
                     </div>
@@ -764,7 +716,7 @@ const Page = () => {
                         width={16}
                         height={16}
                       />
-                      <p className="text-sm md:text-base text-gray-600 font-bold">
+                      <p className=" text-gray-600 font-bold">
                         {course.Date}
                       </p>
                     </div>
@@ -818,9 +770,9 @@ const Page = () => {
                 </div>
               ))}
             </div>{" "}
-            <div className="w-28 mx-auto py-10">
+            <div className="w-24  md:w-28 mx-auto md:py-5">
               <div className="flex justify-between items-center">
-                <p>Show More</p>
+                <p className="underline underline-offset-4">Show More</p>
                 <Image
                   src="/icons/arrowDown.svg"
                   alt="arrow"

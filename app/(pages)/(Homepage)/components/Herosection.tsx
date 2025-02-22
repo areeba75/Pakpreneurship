@@ -10,8 +10,8 @@ const Herosection = () => {
       >
         {/* Overlay */}
         <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-black to-transparent opacity-100"></div>
-        <div className="md:w-[95%] px-1 mx-auto h-full flex items-center py-3">
-          <div className="z-10 flex flex-col justify-end lg:justify-center md:w-[95%] lg:w-[50%] h-full text-white space-y-2 lg:space-y-6">
+        <div className="md:w-[90%] px-1 mx-auto h-full flex items-center py-3">
+          <div className="z-10 flex flex-col justify-end lg:justify-center md:w-[95%] lg:w-[55%] h-full text-white space-y-2 lg:space-y-6">
             <h1>
               The Future of Learning is{" "}
               <span className="text-green-800 italic">Practical!</span>

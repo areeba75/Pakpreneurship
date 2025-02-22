@@ -112,7 +112,7 @@ button {
 
 input::placeholder {
   color: aliceblue;
-  font-size: 1.1rem;
+  font-size: 12px;
 }
 
 /* ✅ Responsive Font Sizes */
@@ -194,7 +194,7 @@ input::placeholder {
   select,
   option,
   ::placeholder {
-    font-size: 14px;
+    font-size: 12px;
     color: aliceblue;
   }
 

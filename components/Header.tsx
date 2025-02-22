@@ -33,22 +33,27 @@ const Header = () => {
       {/* Navigation for Large Screens */}
       <div className="hidden lg:flex gap-8">
         <ul className="flex space-x-2 xl:space-x-6 text-white">
-          <li className="hover:underline hover:underline-offset-12 hover:text-green-600">
+          <li className=" hover:text-green-500 hover:after:content-[''] hover:after:block hover:after:w-10 hover:after:h-[1px] hover:after:bg-green-500 hover:after:mt-0">
             Home
           </li>
-          <li className="hover:underline hover:underline-offset-12  hover:text-green-600">
+          <li className=" hover:text-green-500 hover:after:content-[''] hover:after:block hover:after:w-10 hover:after:h-[1px] hover:after:bg-green-500 hover:after:mt-0">
+            {" "}
             Programs
           </li>
-          <li className="hover:underline hover:underline-offset-12  hover:text-green-800">
+          <li className=" hover:text-green-500 hover:after:content-[''] hover:after:block hover:after:w-10 hover:after:h-[1px] hover:after:bg-green-500 hover:after:mt-0">
+            {" "}
             Mentors
           </li>
-          <li className="hover:underline hover:underline-offset-12  hover:text-green-800">
+          <li className=" hover:text-green-500 hover:after:content-[''] hover:after:block hover:after:w-10 hover:after:h-[1px] hover:after:bg-green-500 hover:after:mt-0">
+            {" "}
             How it Works
           </li>
-          <li className="hover:underline hover:underline-offset-12 hover:text-green-800">
+          <li className=" hover:text-green-500 hover:after:content-[''] hover:after:block hover:after:w-10 hover:after:h-[1px] hover:after:bg-green-500 hover:after:mt-0">
+            {" "}
             About Us
           </li>
-          <li className="hover:underline hover:underline-offset-12  hover:text-green-800">
+          <li className=" hover:text-green-500 hover:after:content-[''] hover:after:block hover:after:w-10 hover:after:h-[1px] hover:after:bg-green-500 hover:after:mt-0">
+            {" "}
             Contact Us
           </li>
         </ul>

@@ -25,14 +25,15 @@ const MobileSidebar = () => {
             className="md:hidden mt-8 mb-4 mx-4  bg-gray-100 border-2 border-gray-200"
           > */}
           {/* <Menu /> */}
-          <div className="flex items-center w-[100px] justify-between">
+
+          <div className="flex items-center w-[100px] bg-black justify-between">
             <div className="flex gap-2 bg-black">
               <Image
                 src="/icons/filter.svg"
                 width={18}
                 height={18}
                 alt="favourite"
-                className="2xl:w-[42px] 2xl:h-[42px]"
+                // className="2xl:w-[42px] 2xl:h-[42px]"
               />
               <p className=" font-bold">Filters </p>
             </div>
