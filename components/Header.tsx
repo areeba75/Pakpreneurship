@@ -12,7 +12,7 @@ import {
 
 const Header = () => {
   return (
-    <div className="fixed left-3 md:left-10 lg:left-16 top-2  w-[90%] rounded-2xl  shadow-md px-4 md:px-8 py-4 bg-white/10 backdrop-blur-lg flex items-center justify-between z-20">
+    <div className="fixed left-5 md:left-10 lg:left-16 top-2  w-[90%] rounded-2xl  shadow-md px-4 md:px-8 py-4 bg-white/10 backdrop-blur-3xl flex items-center justify-between z-20">
       {/* Logo Section */}
       <div className="flex items-center gap-2 ">
         <Image

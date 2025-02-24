@@ -24,7 +24,7 @@ const Hero = () => {
                 we guide you every step of the way to ensure success.
               </p>
               <div className="">
-                <button className=" bg-green-800 flex justify-center items-center text-white md:px-4 py-2 rounded-full">
+                <button className=" bg-green-800 flex justify-center items-center text-white px-4 py-2 rounded-full">
                   Apply Now
                   <Image
                     src="/icons/arrow.svg"

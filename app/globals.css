@@ -24,9 +24,34 @@
     transform: translateX(-100%);
   }
 }
+@keyframes scrollLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scrollRight {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-scroll-left {
+  animation: scrollLeft 50s linear infinite;
+}
+
+.animate-scroll-right {
+  animation: scrollRight 50s linear infinite;
+}
 
 .animate-marquee {
-  animation: marquee 30s linear infinite;
+  animation: marquee 50s linear infinite !important;
 }
 /* ✅ Allow spans to inherit their color */
 span {
@@ -159,21 +184,20 @@ input::placeholder {
   button {
     font-size: 10px;
     padding: 3px 6px 3px 6px;
-    ;
   }
 }
 
 @media (min-width: 641px) and (max-width: 1024px) {
   h1 {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     color: aliceblue;
   }
   h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: aliceblue;
   }
   h3 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     color: aliceblue;
   }
   h4 {
@@ -252,7 +276,7 @@ button {
   select,
   option {
     color: aliceblue;
-    font-size: 1rem;
+    font-size: 14px;
   }
   button {
     color: aliceblue;
@@ -404,8 +428,6 @@ button {
     @apply bg-background text-foreground;
   }
 }
-
-
 
 @layer base {
   * {

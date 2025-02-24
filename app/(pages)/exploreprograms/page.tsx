@@ -488,7 +488,7 @@ const Page = () => {
         </Sheet>
         <div className="md:flex md:justify-around md:gap-5 ">
           <section className="hidden md:block w-[20%] md:w-[25%]">
-            <div className="border-2 rounded-3xl p-4 md:p-0 bg-[#313131]">
+            <div className=" rounded-3xl p-4 md:p-0 bg-[#313131]">
               <div className="hidden md:flex items-center gap-2 p-4 ">
                 <Image
                   src="/icons/filter.svg"
