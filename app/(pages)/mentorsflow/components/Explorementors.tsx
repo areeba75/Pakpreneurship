@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { SlSocialInstagram, SlSocialLinkedin } from "react-icons/sl";
 import { TiSocialFacebookCircular } from "react-icons/ti";
@@ -275,27 +276,27 @@ const Explorementors = () => {
 
               {/* Social Media Links */}
               <div className="flex justify-center items-end gap-3 mt-3">
-                <a
+                <Link
                   href={instructor.social.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <TiSocialFacebookCircular className="text-xl md:text-2xl" />
-                </a>
-                <a
+                </Link>
+                <Link
                   href={instructor.social.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <SlSocialInstagram className="text-lg md:text-xl" />
-                </a>
-                <a
+                </Link>
+                <Link
                   href={instructor.social.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <SlSocialLinkedin className="text-lg md:text-xl" />
-                </a>
+                </Link>
               </div>
 
               {/* Instructor Info */}

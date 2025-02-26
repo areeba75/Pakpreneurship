@@ -37,7 +37,7 @@ export default function RootLayout({
         className={`${geistSans.variable}  ${geistMono.variable} ${poppins.variable} antialiased bg-black`}
       >
         <Header />
-        <div className="m-3 md:m-5">{children}</div>
+        <div className="m-3 md:mx-5">{children}</div>
         <Footer/>
       </body>
     </html>
