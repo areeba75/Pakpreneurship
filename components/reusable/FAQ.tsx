@@ -1,3 +1,4 @@
+"use client"
 import {
   Accordion,
   AccordionItem,
@@ -5,7 +6,7 @@ import {
   AccordionContent,
 } from "@/components/ui/accordion";
 import Image from "next/image";
-import { useState } from "react";
+// import { useState } from "react";
 
 interface FAQItem {
   question: string;
@@ -17,47 +18,47 @@ interface FAQProps {
   title: string;
   items: FAQItem[];
 }
-type Tab = {
-  label: string;
-  id: string;
-};
+// type Tab = {
+//   label: string;
+//   id: string;
+// };
 export default function FAQ({ title, items }: FAQProps) {
-  const tabs: Tab[] = [
-    {
-      label: "Idea Generation",
-      id: "Idea Generation",
-    },
-    {
-      label: "Problem Identification",
-      id: "Problem Identification",
-    },
-    {
-      label: "Market Research",
-      id: "Market Research",
-    },
-    {
-      label: "Validation Techniques",
-      id: "Validation Techniques",
-    },
+  // const tabs: Tab[] = [
+  //   {
+  //     label: "Idea Generation",
+  //     id: "Idea Generation",
+  //   },
+  //   {
+  //     label: "Problem Identification",
+  //     id: "Problem Identification",
+  //   },
+  //   {
+  //     label: "Market Research",
+  //     id: "Market Research",
+  //   },
+  //   {
+  //     label: "Validation Techniques",
+  //     id: "Validation Techniques",
+  //   },
 
-    {
-      label: "Defining Your Unique Value Proposition",
-      id: "Defining Your Unique Value Proposition",
-    },
-  ];
-  const [activeTabPro, setActiveTabPro] = useState<string>(
-    "Scholarship Overview"
-  );
-  const handleTabClick = (tab: Tab) => {
-    setActiveTabPro(tab.label);
-    const section = document.getElementById(tab.id);
-    if (section) {
-      const yOffset = -100;
-      const yPosition =
-        section.getBoundingClientRect().top + window.pageYOffset + yOffset;
-      window.scrollTo({ top: yPosition, behavior: "smooth" });
-    }
-  };
+  //   {
+  //     label: "Defining Your Unique Value Proposition",
+  //     id: "Defining Your Unique Value Proposition",
+  //   },
+  // ];
+  // const [activeTabPro, setActiveTabPro] = useState<string>(
+  //   "Scholarship Overview"
+  // );
+  // const handleTabClick = (tab: Tab) => {
+  //   setActiveTabPro(tab.label);
+  //   const section = document.getElementById(tab.id);
+  //   if (section) {
+  //     const yOffset = -100;
+  //     const yPosition =
+  //       section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+  //     window.scrollTo({ top: yPosition, behavior: "smooth" });
+  //   }
+  // };
   return (
     <section className="flex justify-start mt-8">
       {/* Wrapper Div */}
