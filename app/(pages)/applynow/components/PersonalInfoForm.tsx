@@ -119,7 +119,7 @@ const PersonalInfoForm = () => {
                       id="fullname"
                       type="text"
                       placeholder="Enter your full name"
-                      className="bg-[#313131] border-none rounded-full md:py-5 md:pl-6 placeholder:text-gray-400"
+                      className="bg-[#313131] border-none rounded-full  md:py-5 md:pl-6 placeholder:text-gray-400"
                       {...field}
                     />
                   </FormControl>
@@ -291,7 +291,7 @@ const PersonalInfoForm = () => {
                       {/* Styled container wrapping the label and input */}
                       <label
                         htmlFor="resume"
-                        className="flex flex-col items-center justify-center border border-[#9D9D9D80] rounded-xl py-16 px-6 text-center cursor-pointer hover:border-[#A6EDC8] transition-colors"
+                        className="flex flex-col items-center justify-center border border-[#9D9D9D80] rounded-xl py-5 md:py-16 px-6 text-center cursor-pointer hover:border-[#A6EDC8] transition-colors"
                       >
                         {/* Preview or default icon */}
                         <div className="text-[#A6EDC8] text-4xl mb-4">

@@ -4,7 +4,7 @@ const WatchProcess = () => {
   return (
     <>
       <section>
-        <div className="md:w-1/2 mx-auto text-center">
+        <div className="md:w-1/2 mx-auto text-center py-5">
           <h2>
             Watch our Work <em className="text-green-600">Process!</em>
           </h2>
