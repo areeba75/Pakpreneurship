@@ -4,59 +4,48 @@ import FAQ from "@/components/reusable/FAQ";
 const FaqSection = () => {
   return (
     <>
-      <div className="text-center md:w-[55%] mx-auto mt-5 md:mt-10 space-y-2">
-        <h5>
-          Frequently Asked{" "}
-          <span className="text-[#A6EDC8] font-semibold">Questions!</span>
-        </h5>
-        <p>
-          Find answers to the most common questions about{" "}
-          <span className="font-semibold">PAKPRENEURSHIP</span>, our programs,
-          and how we can help you turn your entrepreneurial dreams into reality.
-          Whether you&#39;re curious about mentorship, resources, or the
-          application process, we&#39;ve got you covered!
-        </p>
-      </div>
-      <div className="w-[90%] mx-auto">
-        <FAQ
-          title="Frequently Asked Questions:"
-          items={[
-            {
-              question: "Why should I study in the United Kingdom?",
-              answer:
-                "The UK is home to some of the world's best universities, known for their high academicstandards, innovative teaching methods, and research opportunities.",
-            },
-            {
-              question:
-                "What is the cost of studying in the UK for international students?",
-              answer:
-                "Tuition fees can range from £10,000 to £38,000 per year, depending on the course and university.",
-            },
-            {
-              question: "What type of visa do I need to study in the UK?",
-              answer:
-                "You will need a Tier 4 (General) student visa for courses longer than 6 months. For shortercourses, a Short-term study visa may be required",
-            },
-            {
-              question: "How long does it take to complete a degree in the UK",
-              answer: ` 
-          • Undergraduate degrees: Typically take 3–4 years.
-          • Postgraduate degrees: Usually 1–2 years.
-          • PhDs: Normally take 3–4 years.`,
-            },
-            {
-              question: "What is the post-study work visa in the UK",
-              answer:
-                "The Graduate Route Visa allows international students to stay in the UK for up to 2 years (3years for PhD graduates) after completing their degree to work or look for employment.",
-            },
-            {
-              question: "Is it safe to study and live in the UK?",
-              answer:
-                "Yes, the UK is generally safe for international students. Universities provide robust safety and security services, including campus security, emergency support, and safety apps to ensurestudent well-being.",
-            },
-          ]}
-        />{" "}
-      </div>
+    <div className='text-center md:w-[55%] mx-auto mt-10 space-y-2'>
+        <h5>Frequently Asked <span className="text-[#A6EDC8] font-semibold">Questions!</span></h5>
+        <p>Find answers to the most common questions about <span className="font-semibold">PAKPRENEURSHIP</span>, our programs, and how we can help you turn your entrepreneurial dreams into reality. Whether you&#39;re curious about mentorship, resources, or the application process, we&#39;ve got you covered!</p>
+    </div>
+     <div className="w-[90%] mx-auto">
+            <FAQ
+              title="Frequently Asked Questions:"
+              items={[
+
+                {
+                  question: "What is PAKPRENEURSHIP?",
+
+                  answer:
+                    "PAKPRENEURSHIP is a learning and incubation center dedicated to empowering aspiring entrepreneurs by providing mentorship, resources, and training to turn innovative ideas into successful businesses."
+                },
+                {
+                  question: "Who can join PakPreneurship Programs?",
+
+                  answer:
+                "PakPreneurship programs are open to anyone.It’s for high school students globally, teaching them to brainstorm and pitch business ideas.For early-stage entrepreneurs—think small business owners or  founders—with no strict age or degree rules, just a solid idea and commitment.Depends on what you’re after—student-focused ones might need you in school, while others just want hustle, an idea, or some skin in the game."                },
+                {
+                  question:
+        "What kind of Support do you provide?",
+                  answer:
+        "PakPreneurship Incubators offer a range of support to help budding business owners turn ideas into reality and grow their ventures.Workshops: Short, focused sessions to teach specific skills—like crafting a business plan, mastering digital marketing, or pitching to investors.Incubators: These are longer-term programs that nurture startups, giving them a space to grow. You get mentorship, resources.Mentorship: A staple—connecting you with professionals who’ve launched or scaled ventures. Assigns mentors to tech founders with revenue, guiding them on growth hacks or funding.Networking Events: Programs host meetups, pitch nights, or mixers to link you with peers, investors, or industry folks."                },
+                {
+          question: "Can i join if i have already a startup?",
+                  answer:
+"Yes, you can absolutely join PakPreneurship even if you already have a startup. its not just for beginners dreaming up ideas, but also for founders like you who’ve got something going and want to level it up. Having a startup often makes you a perfect fit—especially for ones aimed at growth, scaling, or refining an existing venture."                },
+
+                {
+                  question: "How do I apply for a program?",
+                  answer:
+                    "Fill the form to apply : <Link>https://docs.google.com/forms/d/e/1FAIpQLScIzDapaoHGb1pzMdJOd_Fhxr9Q-gNHeESWFPviyzYK_P4sXg/viewform?usp=header</Link>"
+                },
+                
+                
+              ]}
+            />{" "}
+          </div>
+
+
     </>
   );
 };
