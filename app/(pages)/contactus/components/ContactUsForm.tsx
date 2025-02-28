@@ -334,10 +334,18 @@ const ContactUsForm = () => {
           {/* Right Section */}
           <div className="w-full lg:w-1/2 flex flex-col gap-4 items-center justify-center   flex-1">
             <div className="relative w-full h-[400px] bg-[#111111] rounded-2xl overflow-hidden flex flex-col items-center justify-center">
-              {/* Background (Dark Theme with Lines) */}
-              <div className="absolute inset-0 bg-[url('/contactuspage/map-bg.svg')] bg-cover bg-center opacity-90"></div>
 
-              {/* Custom Map Marker */}
+              {/* Google Map Embed */}
+              <div className="absolute inset-0 w-full h-full">
+                <iframe
+                  className="w-full h-full"
+                  src="https://www.google.com/maps?q=102+Johar+Town,+Lahore&output=embed"
+                  allowFullScreen
+                  loading="lazy"
+                ></iframe>
+              </div>
+
+              {/* Floating Marker */}
               <div className="relative w-14 h-14 z-10">
                 <Image
                   src="/contactuspage/marker.svg"
@@ -350,14 +358,15 @@ const ContactUsForm = () => {
               </div>
 
               {/* Floating Address Box */}
-              <div className="relative mt-2 bg-[#232323] text-white p-4 rounded-2xl shadow-md w-[90%] md:w-[55%] text-center z-10 space-y-2">
-                <p className="text-lg">Pakpreneurship LLC</p>
-                <p className="">102 Johar, town Lahore</p>
-                <p className="text-[12px]">
-                  Hours Monday-Friday 9:00 am - 5:00 pm
-                </p>
+              <div className="relative mt-2 bg-[#232323] text-white p-4 rounded-2xl shadow-md w-[90%] md:w-[55%] text-center z-10">
+                <p className="text-lg font-semibold">Pakpreneurship LLC</p>
+                <p className="text-sm">102 Johar, Town Lahore</p>
+                <p className="text-sm">Hours: Monday-Friday, 9:00 AM - 5:00 PM</p>
               </div>
             </div>
+
+
+
 
             {/* Contact Info Section - Same Height as Map Section */}
             <div className="w-full flex-1 bg-[#111111] border border-[#9D9D9D80] rounded-2xl p-2 md:p-4 grid grid-cols-1 gap-3">
