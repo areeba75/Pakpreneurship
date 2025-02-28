@@ -73,12 +73,12 @@ const ReviewSection = () => {
             {[...reviews, ...reviews].map((review, index) => (
               <div
                 key={index}
-                className="min-w-[300px] md:min-w-[400px] p-6 bg-gray-800 rounded-lg shadow-lg text-white"
+                className="min-w-[300px] md:min-w-[400px] p-2 lg:p-4 bg-gray-800 rounded-lg shadow-lg text-white"
               >
-                <h3 className="text-lg font-bold">{review.name}</h3>
+                <h6 className="">{review.name}</h6>
                 <p className="text-yellow-400">{"⭐".repeat(review.rating)}</p>
-                <p className="text-sm text-gray-400">{review.time}</p>
-                <p className="mt-2 text-gray-300 text-wrap w-full">
+                <p className=" text-gray-400">{review.time}</p>
+                <p className="md:mt-2 leading-tight text-gray-300 text-wrap w-full">
                   {review.review}
                 </p>
               </div>

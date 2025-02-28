@@ -1,19 +1,16 @@
-import { Ham } from "lucide-react";
+"use client";
 import Image from "next/image";
-import React from "react";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+import React, { useState } from "react";
+
+import Link from "next/link";
 
 const Header = () => {
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
+  const toggleDropdown = () => {
+    setDropdownOpen(!isDropdownOpen);
+  };
   return (
     <div className="fixed left-5 md:left-10 lg:left-16 top-2  w-[90%] rounded-2xl  shadow-md px-4 md:px-8 py-4 bg-white/10 backdrop-blur-3xl flex items-center justify-between z-20">
-      {/* Logo Section */}
       <div className="flex items-center gap-2 ">
         <Image
           src="/logo.svg"
@@ -30,32 +27,43 @@ const Header = () => {
         </h6>
       </div>
 
-      {/* Navigation for Large Screens */}
       <div className="hidden lg:flex gap-8">
         <ul className="flex space-x-2 xl:space-x-6 text-white">
-          <li className=" hover:text-green-500 hover:after:content-[''] hover:after:block hover:after:w-10 hover:after:h-[1px] hover:after:bg-green-500 hover:after:mt-0">
-            Home
-          </li>
-          <li className=" hover:text-green-500 hover:after:content-[''] hover:after:block hover:after:w-10 hover:after:h-[1px] hover:after:bg-green-500 hover:after:mt-0">
-            {" "}
-            Programs
-          </li>
-          <li className=" hover:text-green-500 hover:after:content-[''] hover:after:block hover:after:w-10 hover:after:h-[1px] hover:after:bg-green-500 hover:after:mt-0">
-            {" "}
-            Mentors
-          </li>
-          <li className=" hover:text-green-500 hover:after:content-[''] hover:after:block hover:after:w-10 hover:after:h-[1px] hover:after:bg-green-500 hover:after:mt-0">
-            {" "}
-            How it Works
-          </li>
-          <li className=" hover:text-green-500 hover:after:content-[''] hover:after:block hover:after:w-10 hover:after:h-[1px] hover:after:bg-green-500 hover:after:mt-0">
-            {" "}
-            About Us
-          </li>
-          <li className=" hover:text-green-500 hover:after:content-[''] hover:after:block hover:after:w-10 hover:after:h-[1px] hover:after:bg-green-500 hover:after:mt-0">
-            {" "}
-            Contact Us
-          </li>
+          <Link href="/">
+            <li className=" hover:text-green-500 hover:after:content-[''] hover:after:block hover:after:w-10 hover:after:h-[1px] hover:after:bg-green-500 hover:after:mt-0">
+              Home
+            </li>
+          </Link>
+          <Link href="/exploreprograms">
+            <li className=" hover:text-green-500 hover:after:content-[''] hover:after:block hover:after:w-10 hover:after:h-[1px] hover:after:bg-green-500 hover:after:mt-0">
+              {" "}
+              Programs
+            </li>{" "}
+          </Link>
+          <Link href="/mentorsflow">
+            <li className=" hover:text-green-500 hover:after:content-[''] hover:after:block hover:after:w-10 hover:after:h-[1px] hover:after:bg-green-500 hover:after:mt-0">
+              {" "}
+              Mentors
+            </li>
+          </Link>
+          <Link href="/howitworks">
+            <li className=" hover:text-green-500 hover:after:content-[''] hover:after:block hover:after:w-10 hover:after:h-[1px] hover:after:bg-green-500 hover:after:mt-0">
+              {" "}
+              How it Works
+            </li>
+          </Link>
+          <Link href="/aboutus">
+            <li className=" hover:text-green-500 hover:after:content-[''] hover:after:block hover:after:w-10 hover:after:h-[1px] hover:after:bg-green-500 hover:after:mt-0">
+              {" "}
+              About Us
+            </li>
+          </Link>
+          <Link href="/contactus">
+            <li className=" hover:text-green-500 hover:after:content-[''] hover:after:block hover:after:w-10 hover:after:h-[1px] hover:after:bg-green-500 hover:after:mt-0">
+              {" "}
+              Contact Us
+            </li>
+          </Link>
         </ul>
       </div>
 
@@ -64,39 +72,81 @@ const Header = () => {
         Join Us
       </button>
 
-      {/* Dropdown for Mobile View */}
+     
       <div className="lg:hidden block">
-        <DropdownMenu>
-          <DropdownMenuTrigger>
-            {/* <Ham className="text-white" /> */}
+        <div className="relative flex items-center space-x-3 rtl:space-x-reverse">
+          <button
+            type="button"
+            className="flex text-sm rounded-full "
+            id="user-menu-button"
+            aria-expanded={isDropdownOpen}
+            onClick={toggleDropdown}
+          >
+            <span className="sr-only">Open user menu</span>
             <Image src="/icons/navicon.svg" alt="nav" width={20} height={20} />
-          </DropdownMenuTrigger>
-          <DropdownMenuContent>
-            <DropdownMenuLabel>Home</DropdownMenuLabel>
-            <DropdownMenuSeparator />
-            <DropdownMenuItem className="border-b border-gray-200 last:border-b-0">
-              Programs
-            </DropdownMenuItem>
-            <DropdownMenuItem className="border-b border-gray-200 last:border-b-0">
-              Mentors
-            </DropdownMenuItem>
-            <DropdownMenuItem className="border-b border-gray-200 last:border-b-0">
-              How it Works
-            </DropdownMenuItem>
-            <DropdownMenuItem className="border-b border-gray-200 last:border-b-0">
-              About Us
-            </DropdownMenuItem>
-            <DropdownMenuItem className="border-b border-gray-200 last:border-b-0">
-              Contact Us
-            </DropdownMenuItem>
-            <DropdownMenuItem>
-              {" "}
-              <button className="bg-green-800 text-white px-5 py-2 rounded-full">
-                Join Us
-              </button>
-            </DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu>
+          </button>
+
+          {/* Dropdown Menu */}
+          {isDropdownOpen && (
+            <div
+              id="user-dropdown"
+              className="absolute right-1 top-10 z-20 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600"
+            >
+           
+              <ul className="py-2 w-[150px]">
+                <li>
+                  <Link
+                    href="/"
+                    className="block px-4 text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white border-b"
+                  >
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="exploreprograms"
+                    className="block px-4 py-1 text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white border-b"
+                  >
+                    Programs
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="mentorsflow"
+                    className="block px-4 py-1 text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white border-b"
+                  >
+                    Mentors{" "}
+                  </Link>
+                </li>{" "}
+                <li>
+                  <Link
+                    href="howitworks"
+                    className="block px-4 py-1  text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white border-b"
+                  >
+                    How it Works{" "}
+                  </Link>
+                </li>{" "}
+                <li>
+                  <Link
+                    href="aboutus"
+                    className="block px-4 py-1  text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white border-b"
+                  >
+                    About us{" "}
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="contactus"
+                    className="block px-4 py-1  text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                  >
+                    Contact Us{" "}
+                  </Link>
+                </li>
+              
+              </ul>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
