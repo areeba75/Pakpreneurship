@@ -17,7 +17,7 @@ const Herosection = () => {
               <span className="text-green-800 italic">Practical!</span>
             </h1>
             <p className="w-[80%]">
-              Gain hands-on experience with real-world projects and expert
+              Gain hands-on experience with real-world projects and   expert
               mentorship.
             </p>
             <div className="flex w-full md:w-[75%] xl:w-[60%] md:gap-3 gap-1">
