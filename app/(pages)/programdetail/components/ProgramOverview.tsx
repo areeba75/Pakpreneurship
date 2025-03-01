@@ -21,7 +21,7 @@ const ProgramOverview = () => {
             are now being accepted. International students are welcome to apply
             for the 2024 Inje University GKS Scholarship. It is a South Korean
             private university located in Gimhae. The Inje University GKS
-            Scholarship 2024 is offered for Research, Master's, and Doctoral
+            Scholarship 2024 is offered for Research, Master&#39;s, and Doctoral
             programs. Along with the degree programs, a year of Korean language
             instruction is included.
           </p>
@@ -31,7 +31,7 @@ const ProgramOverview = () => {
             Korea. In collaboration with the National Institute for
             International Education, this scholarship seeks to develop world
             leaders (NIIED). The scholarship guarantees a comprehensive
-            educational experience in South Korea's dynamic academic
+            educational experience in South Korea&#39;s dynamic academic
             environment, including research funding and health insurance.
           </p>
           <p>

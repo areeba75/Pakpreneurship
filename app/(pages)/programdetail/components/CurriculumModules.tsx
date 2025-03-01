@@ -1,4 +1,3 @@
-import FAQ from "@/components/reusable/FAQ";
 import ProgramDetailAccordian from "@/components/reusable/ProgramDetailAccordian";
 import Image from "next/image";
 import React from "react";
@@ -27,7 +26,7 @@ const CurriculumModules = () => {
                 {
                   heading: "Ideation & Validation",
                   answer:
-                    "The UK is home to some of the world's best universities, known for their high academicstandards, innovative teaching methods, and research opportunities.",
+                    "The UK is home to some of the world&#39;s best universities, known for their high academicstandards, innovative teaching methods, and research opportunities.",
                   line1: " High-quality education",
                   line2: " Diverse range of courses",
                   line3: " Cultural diversity",
@@ -36,7 +35,7 @@ const CurriculumModules = () => {
                 {
                   heading: "Ideation & Validation",
                   answer:
-                    "The UK is home to some of the world's best universities, known for their high academicstandards, innovative teaching methods, and research opportunities.",
+                    "The UK is home to some of the world&#39;s best universities, known for their high academicstandards, innovative teaching methods, and research opportunities.",
                   line1: " High-quality education",
                   line2: " Diverse range of courses",
                   line3: " Cultural diversity",
@@ -45,7 +44,7 @@ const CurriculumModules = () => {
                 {
                   heading: "Ideation & Validation",
                   answer:
-                    "The UK is home to some of the world's best universities, known for their high academicstandards, innovative teaching methods, and research opportunities.",
+                    "The UK is home to some of the world&#39;s best universities, known for their high academicstandards, innovative teaching methods, and research opportunities.",
                   line1: " High-quality education",
                   line2: " Diverse range of courses",
                   line3: " Cultural diversity",
@@ -54,7 +53,7 @@ const CurriculumModules = () => {
                 {
                   heading: "Ideation & Validation",
                   answer:
-                    "The UK is home to some of the world's best universities, known for their high academicstandards, innovative teaching methods, and research opportunities.",
+                    "The UK is home to some of the world&#39;s best universities, known for their high academicstandards, innovative teaching methods, and research opportunities.",
                   line1: " High-quality education",
                   line2: " Diverse range of courses",
                   line3: " Cultural diversity",
@@ -63,7 +62,7 @@ const CurriculumModules = () => {
                 {
                   heading: "Ideation & Validation",
                   answer:
-                    "The UK is home to some of the world's best universities, known for their high academicstandards, innovative teaching methods, and research opportunities.",
+                    "The UK is home to some of the world&#39;s best universities, known for their high academicstandards, innovative teaching methods, and research opportunities.",
                   line1: " High-quality education",
                   line2: " Diverse range of courses",
                   line3: " Cultural diversity",
@@ -72,7 +71,7 @@ const CurriculumModules = () => {
                 {
                   heading: "Ideation & Validation",
                   answer:
-                    "The UK is home to some of the world's best universities, known for their high academicstandards, innovative teaching methods, and research opportunities.",
+                    "The UK is home to some of the world&#39;s best universities, known for their high academicstandards, innovative teaching methods, and research opportunities.",
                   line1: " High-quality education",
                   line2: " Diverse range of courses",
                   line3: " Cultural diversity",

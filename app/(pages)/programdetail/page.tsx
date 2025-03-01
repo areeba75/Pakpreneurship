@@ -13,7 +13,7 @@ type Tab = {
   src: string;
   alt: string;
 };
-const page = () => {
+const Page = () => {
   // const Scholarshipdetail = () => {
   const tabs: Tab[] = [
     {
@@ -104,7 +104,7 @@ const page = () => {
             {
               question: "Why should I study in the United Kingdom?",
               answer:
-                "The UK is home to some of the world's best universities, known for their high academicstandards, innovative teaching methods, and research opportunities.",
+                "The UK is home to some of the world&#39;s best universities, known for their high academicstandards, innovative teaching methods, and research opportunities.",
             },
             {
               question:
@@ -140,4 +140,4 @@ const page = () => {
     </div>
   );
 };
-export default page;
+export default Page;

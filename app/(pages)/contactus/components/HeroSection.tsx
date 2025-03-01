@@ -7,7 +7,7 @@ const HeroSection = () => {
         <div
           className="relative w-full bg-cover bg-center bg-no-repeat rounded-3xl h-[200px] lg:h-[300px] flex flex-col justify-end md:justify-center items-center text-white before:absolute before:inset-0 before:bg-black/60"
           style={{
-            backgroundImage: "url('/contactuspage/contactushero.jpeg')",
+            backgroundImage: "url(&#39;/contactuspage/contactushero.jpeg&#39;)",
           }}
         >
           <div className="z-10 text-center py-10">

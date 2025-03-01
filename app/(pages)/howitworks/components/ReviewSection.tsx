@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React from "react";
 
 const reviews = [
   {
@@ -8,14 +8,14 @@ const reviews = [
     rating: 5,
     time: "2 months ago",
     review:
-      "PAKPRENEURSHIP's Entrepreneurship Bootcamp gave me the skills and confidence to scale my business. The trainers are experts, and the community is incredibly supportive.",
+      "PAKPRENEURSHIP&#39;s Entrepreneurship Bootcamp gave me the skills and confidence to scale my business. The trainers are experts, and the community is incredibly supportive.",
   },
   {
     name: "Ahmed T",
     rating: 5,
     time: "2 months ago",
     review:
-      "The Startup Incubation Program is top-notch! The hands-on guidance and networking opportunities are invaluable. I couldn't have asked for a better platform to launch my business.",
+      "The Startup Incubation Program is top-notch! The hands-on guidance and networking opportunities are invaluable. I couldn&#39;t have asked for a better platform to launch my business.",
   },
   {
     name: "Usama J",
@@ -29,7 +29,7 @@ const reviews = [
     rating: 5,
     time: "2 months ago",
     review:
-      "The Startup Incubation Program is top-notch! The hands-on guidance and networking opportunities are invaluable. I couldn't have asked for a better platform to launch my business.",
+      "The Startup Incubation Program is top-notch! The hands-on guidance and networking opportunities are invaluable. I couldn&#39;t have asked for a better platform to launch my business.",
   },
   {
     name: "Fatima Z",

@@ -12,7 +12,7 @@ const HeroSection = () => {
         >
           <div className="z-10 text-center py-10">
             <h1>
-              How It <span className="text-green-600">Works!</span>
+              How It <span className="text-green-600">Works!</span>    
             </h1>
             <div className="w-[90%]  mx-auto">
               <p>

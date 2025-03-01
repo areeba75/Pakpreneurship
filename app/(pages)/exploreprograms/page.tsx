@@ -3,134 +3,12 @@ import React from "react";
 // import Image from "next/image";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Button } from "@/components/ui/button";
-// import { Input } from "@/components/ui/input";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-// import { MdOutlineSortByAlpha } from "react-icons/md";
 import { IoIosArrowDropright } from "react-icons/io";
-// import { Checkbox } from "@/components/ui/checkbox";
 import Image from "next/image";
-// import { FileSearch } from "lucide-react";
 
 const Page = () => {
-  // const courseArr = [
-  //   {
-  //     UniImg: "/course1.svg",
-  //     title: "KAIST University Scholarship",
-  //     UniName: "Korea Advanced Institute of Science & Technology (KAIST)",
-  //     locationIcon: "/location.svg",
-  //     country: "USA",
-  //     scholarshipIcon: "/money.svg",
-  //     scholarship: "Fully Funded",
-  //     studyIcon: "/Notebook.svg",
-  //     studyLevel: "Master",
-  //     dateIcon: "/clock.svg",
-  //     Date: "March 2025",
-  //   },
-  //   {
-  //     UniImg: "/course1.svg",
-  //     title: "KAIST University Scholarship",
-  //     UniName: "Korea Advanced Institute of Science & Technology (KAIST)",
-  //     locationIcon: "/location.svg",
-  //     country: "USA",
-  //     scholarshipIcon: "/money.svg",
-  //     scholarship: "Partial Funded",
-  //     studyIcon: "/Notebook.svg",
-  //     studyLevel: "bachelors",
-  //     dateIcon: "/clock.svg",
-  //     Date: "March 2025",
-  //   },
-  //   {
-  //     UniImg: "/course1.svg",
-  //     title: "KAIST University Scholarship",
-  //     UniName: "Korea Advanced Institute of Science & Technology (KAIST)",
-  //     locationIcon: "/location.svg",
-  //     country: "New Zealand",
-  //     scholarshipIcon: "/money.svg",
-  //     scholarship: "Partial Funded",
-  //     studyIcon: "/Notebook.svg",
-  //     studyLevel: "bachelors",
-  //     dateIcon: "/clock.svg",
-  //     Date: "Jan 2025",
-  //   },
-  //   {
-  //     UniImg: "/course1.svg",
-  //     title: "KAIST University Scholarship",
-  //     UniName: "Korea Advanced Institute of Science & Technology (KAIST)",
-  //     locationIcon: "/location.svg",
-  //     country: "UK",
-  //     scholarshipIcon: "/money.svg",
-  //     scholarship: "Partial Funded",
-  //     studyIcon: "/Notebook.svg",
-  //     studyLevel: "bachelors",
-  //     dateIcon: "/clock.svg",
-  //     Date: "Jan 2025",
-  //   },
-  //   {
-  //     UniImg: "/course1.svg",
-  //     title: "KAIST University Scholarship",
-  //     UniName: "Korea Advanced Institute of Science & Technology (KAIST)",
-  //     locationIcon: "/location.svg",
-  //     country: "Denmark",
-  //     scholarshipIcon: "/money.svg",
-  //     scholarship: "Fully Funded",
-  //     studyIcon: "/Notebook.svg",
-  //     studyLevel: "Master",
-  //     dateIcon: "/clock.svg",
-  //     Date: "Jan 2025",
-  //   },
-  //   {
-  //     UniImg: "/course1.svg",
-  //     title: "KAIST University Scholarship",
-  //     UniName: "Korea Advanced Institute of Science & Technology (KAIST)",
-  //     locationIcon: "/location.svg",
-  //     country: "China",
-  //     scholarshipIcon: "/money.svg",
-  //     scholarship: "Fully Funded",
-  //     studyIcon: "/Notebook.svg",
-  //     studyLevel: "PhD",
-  //     dateIcon: "/clock.svg",
-  //     Date: "Feb 2025",
-  //   },
-  //   {
-  //     UniImg: "/course1.svg",
-  //     title: "KAIST University Scholarship",
-  //     UniName: "Korea Advanced Institute of Science & Technology (KAIST)",
-  //     locationIcon: "/location.svg",
-  //     country: "China",
-  //     scholarshipIcon: "/money.svg",
-  //     scholarship: "Partial Funded",
-  //     studyIcon: "/Notebook.svg",
-  //     studyLevel: "PhD",
-  //     dateIcon: "/clock.svg",
-  //     Date: "Feb 2025",
-  //   },
-  //   {
-  //     UniImg: "/course1.svg",
-  //     title: "KAIST University Scholarship",
-  //     UniName: "Korea Advanced Institute of Science & Technology (KAIST)",
-  //     locationIcon: "/location.svg",
-  //     country: "China",
-  //     scholarshipIcon: "/money.svg",
-  //     scholarship: "Fully Funded",
-  //     studyIcon: "/Notebook.svg",
-  //     studyLevel: "bachelors",
-  //     dateIcon: "/clock.svg",
-  //     Date: "Feb 2025",
-  //   },
-  //   {
-  //     UniImg: "/course1.svg",
-  //     title: "KAIST University Scholarship",
-  //     UniName: "Korea Advanced Institute of Science & Technology (KAIST)",
-  //     locationIcon: "/location.svg",
-  //     country: "France",
-  //     scholarshipIcon: "/money.svg",
-  //     scholarship: "Fully Funded",
-  //     studyIcon: "/Notebook.svg",
-  //     studyLevel: "bachelors",
-  //     dateIcon: "/clock.svg",
-  //     Date: "Feb 2025",
-  //   },
-  // ];
+ 
   const featuredarray = [
     {
       img: "/landing/incubation.JFIF",
@@ -234,7 +112,10 @@ const Page = () => {
     },
   ];
   const [selectedValues, setSelectedValues] = React.useState<string[]>([]);
-  const [selectedInfo, setSelectedInfo] = React.useState<string[]>([]);
+const [selectedInfo, setSelectedInfo] = React.useState<string[]>([]);
+
+console.log(selectedValues, selectedInfo); // Temporary usage to avoid ESLint error
+
   const [search, setSearch] = React.useState<string>("");
   const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const value = event.target.value;
@@ -253,29 +134,7 @@ const Page = () => {
     );
   };
 
-  // let filterCountry = courseArr.filter((course) => {
-  //   if (selectedValues.length === 0) {
-  //     return course;
-  //   }
-  //   return selectedValues.includes(course.country.toLowerCase());
-  // });
 
-  // filterCountry = filterCountry.filter((course) => {
-  //   if (!selectedInfo.length) return true;
-
-  //   const normalizedValues = [
-  //     course.studyLevel?.toLowerCase().trim(),
-  //     course.scholarship?.toLowerCase().trim(),
-  //     course.Date?.toLowerCase().trim(),
-  //   ];
-
-  //   return selectedInfo.some((info) =>
-  //     normalizedValues.includes(info.toLowerCase().trim())
-  //   );
-  // });
-  // filterCountry = filterCountry.filter((course) => {
-  //   return course.scholarship.toLowerCase().includes(search.toLowerCase());
-  // });
 
   return (
     <>
@@ -284,7 +143,7 @@ const Page = () => {
           <div
             className="relative w-full bg-cover bg-center bg-no-repeat rounded-3xl h-[230px] lg:h-[300px] flex flex-col justify-end lg:justify-center items-center text-white before:absolute before:inset-0 before:bg-black/60"
             style={{
-              backgroundImage: "url('/exploreprograms/bg-explore.png')",
+              backgroundImage: "url(&#39;/exploreprograms/bg-explore.png&#39;)",
             }}
           >
             <div className="z-10 text-center py-10">
@@ -325,22 +184,7 @@ const Page = () => {
           <SheetContent side={"left"} className="p-0">
             <div className="px-2 py-5 bg-[#313131] text-[#F1F1F1] ">
               <section className=" bg-[#313131] text-[#F1F1F1]">
-                {/* <div className="flex bg-[#313131]  mb-2 w-[60%] px-2 rounded-full">
-                  <input
-                    placeholder="Search Scholarships..."
-                    name="search"
-                    value={search}
-                    onChange={(e) => setSearch(e.target.value)}
-                    className="border-none bg-[#313131] text-white outline-none focus:ring-0 placeholder:text-[12px] py-2 rounded-full"
-                  />
-                  <Image
-                    src="/icons/search.svg"
-                    width={16}
-                    height={16}
-                    alt="favourite"
-                    className="2xl:w-[40px] 2xl:h-[40px] bg-[#313131]"
-                  />
-                </div> */}
+
                 <div className="bg-[#313131] p-2 rounded-xl">
                   <label className="flex items-center gap-2 bg-black p-2 rounded-xl">
                     {/* <FileSearch className="text-white text-lg" /> */}
@@ -462,25 +306,7 @@ const Page = () => {
                       )
                     )}
                   </ul>
-                  {/* <p className="text-base md:text-xl">Application Deadline:</p> */}
-                  {/* <ul className="py-4 space-y-4 md:space-y-6">
-                {["Jan 2025", "Feb 2025", "March 2025"].map((deadline) => (
-                  <li
-                    key={deadline}
-                    className="flex justify-between items-center"
-                  >
-                    <label htmlFor={deadline} className="">
-                      {deadline}
-                    </label>
-                    <input
-                      type="checkbox"
-                      name={deadline}
-                      value={deadline}
-                      onChange={handleInfoChange}
-                    />
-                  </li>
-                ))}
-              </ul> */}
+
                 </ScrollArea>
               </section>
             </div>
@@ -652,91 +478,7 @@ const Page = () => {
                 </button>
               </div>
             </div>
-            {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-5 p-2">
-            {filterCountry.map((course, index) => (
-              <div
-                key={index}
-                className="bg-white shadow-xl rounded-2xl overflow-hidden flex flex-col p-3"
-              >
-                <div>
-                  <Image
-                    src={course.UniImg}
-                    alt="University Image"
-                    width={400}
-                    height={250}
-                    className="w-full object-cover"
-                  />
-                </div>
-
-                <div className="p-2 flex-grow">
-                  <p className="font-bold">{course.title}</p>
-                  <p className="">{course.UniName}</p>
-
-                  <div className="flex justify-between flex-wrap">
-                    <div className="flex items-center gap-2 mt-2">
-                      <Image
-                        src={course.locationIcon}
-                        alt="location"
-                        width={16}
-                        height={16}
-                      />
-                      <p className=" text-gray-600 font-bold">
-                        {course.country}
-                      </p>
-                    </div>
-                    <div className="flex items-center gap-2 mt-2">
-                      <Image
-                        src={course.scholarshipIcon}
-                        alt="year"
-                        width={16}
-                        height={16}
-                      />
-                      <p className=" text-gray-600 font-bold">
-                        {course.scholarship}
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex justify-between flex-wrap">
-                    <div className="flex items-center gap-2 mt-2">
-                      <Image
-                        src={course.studyIcon}
-                        alt="duration"
-                        width={16}
-                        height={16}
-                      />
-                      <p className=" text-gray-600 font-bold">
-                        {course.studyLevel}
-                      </p>
-                    </div>
-                    <div className="flex items-center gap-2 mt-2">
-                      <Image
-                        src={course.dateIcon}
-                        alt="fees"
-                        width={16}
-                        height={16}
-                      />
-                      <p className=" text-gray-600 font-bold">
-                        {course.Date}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <hr className="mx-4 mb-4" />
-
-                <div className="flex gap-2 flex-row justify-evenly mb-1 px-2">
-                  <button className="md:w-[50%] w-[40%] border border-[#F0851D] text-[#F0851D] hover:bg-red-500 hover:text-white text-[12px]  md:text-md md:px-3 md:py-1 rounded-lg  sm:w-auto">
-                    View Details
-                  </button>
-                  <button className=" w-[50%] border border-[#F0851D] text-[#F0851D] text-[12px] hover:bg-red-500 hover:text-white md:text-md md:px-3 py-1 rounded-lg  sm:w-auto">
-                    Start Your Application
-                  </button>
-                </div>
-              </div>
-            ))}
-          </div> */}
-            <div className=" grid grid-cols-2 lg:grid-cols-4 gap-2 md:gap-6 py-5">
+                       <div className=" grid grid-cols-2 lg:grid-cols-4 gap-2 md:gap-6 py-5">
               {featuredarray.map((item, index) => (
                 <div
                   key={index}

@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
 import { FaPlay } from "react-icons/fa";
 
 const SuccessStories = () => {
@@ -33,18 +33,18 @@ const SuccessStories = () => {
   const testimonialRefs = useRef<(HTMLDivElement | null)[]>([]);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
-  const startAutoScroll = () => {
+  const startAutoScroll = useCallback(() => {
     intervalRef.current = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % testimonials.length);
     }, 4000);
-  };
+  }, [testimonials.length]);
 
   useEffect(() => {
     startAutoScroll();
     return () => {
       if (intervalRef.current) clearInterval(intervalRef.current);
     };
-  }, []);
+  }, [startAutoScroll]);
 
   useEffect(() => {
     if (containerRef.current && testimonialRefs.current[currentIndex]) {
@@ -95,7 +95,7 @@ const SuccessStories = () => {
 
         <div
           ref={containerRef}
-          className="h-[150px] md:h-[200px] lg:w-1/2 overflow-y-auto space-y-6 py-6  scrollbar-hide"
+          className="h-[150px] md:h-[200px] lg:w-1/2 overflow-y-auto space-y-6 py-6 scrollbar-hide"
           style={{
             scrollbarWidth: "none",
             msOverflowStyle: "none",
@@ -104,19 +104,23 @@ const SuccessStories = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={testimonial.id}
-              ref={(el) => (testimonialRefs.current[index] = el)}
+              ref={(el) => {
+                testimonialRefs.current[index] = el;
+              }}
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
-              className={`flex items-center justify-between bg-black text-white  md:p-6 rounded-xl transition-opacity duration-100 ${
+              className={`flex items-center justify-between bg-black text-white md:p-6 rounded-xl transition-opacity duration-100 ${
                 index === currentIndex ? "opacity-100" : "opacity-50"
               }`}
             >
               <div className="w-2/3">
                 <p className="italic">{testimonial.text}</p>
                 <div className="flex items-center gap-4 mt-4">
-                  <img
+                  <Image
                     src={testimonial.authorImage}
                     alt="Author"
+                    width={100}
+                    height={100}
                     className="w-12 h-12 rounded-full border"
                   />
                   <p>{testimonial.author}</p>
@@ -124,10 +128,12 @@ const SuccessStories = () => {
               </div>
 
               <div className="relative w-1/3">
-                <img
+                <Image
                   src={testimonial.videoImage}
                   alt="Video Thumbnail"
                   className="rounded-lg"
+                  width={100}
+                  height={100}
                 />
                 <button className="absolute inset-0 flex items-center justify-center">
                   <FaPlay className="text-white text-[8px] md:text-3xl bg-green-500 md:p-3 rounded-full" />

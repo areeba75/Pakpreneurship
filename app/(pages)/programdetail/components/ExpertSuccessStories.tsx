@@ -65,7 +65,7 @@ const ExpertSuccessStories: React.FC<StarRatingProps> = ({
           </div>
           <div
             className="relative lg:w-[70%] bg-cover bg-center bg-no-repeat rounded-lg lg:h-[600px]"
-            style={{ backgroundImage: "url('/programdetail/success-bg.png')" }}
+            style={{ backgroundImage: "url(&#39;/programdetail/success-bg.png&#39;)" }}
           >
             {/* Overlay */}
             {/* <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-black to-transparent opacity-50"></div> */}

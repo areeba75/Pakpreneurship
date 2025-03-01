@@ -7,7 +7,7 @@ const Hero = () => {
       <section>
         <div
           className="relative w-full bg-cover bg-center bg-no-repeat rounded-lg h-[300px] sm:h-[75vh] md:h-screen"
-          style={{ backgroundImage: "url('/programdetail/bg-hero.JFIF')" }}
+          style={{ backgroundImage: "url(&#39;/programdetail/bg-hero.JFIF&#39;)" }}
         >
           {/* Overlay */}
           <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-black to-transparent opacity-100"></div>

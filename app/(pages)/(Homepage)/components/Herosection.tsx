@@ -6,7 +6,7 @@ const Herosection = () => {
     <section>
       <div
         className="relative w-full bg-cover bg-center bg-no-repeat rounded-lg h-[300px] sm:h-[75vh] md:h-screen"
-        style={{ backgroundImage: "url('/landing/bg.JFIF')" }}
+        style={{ backgroundImage: "url(&#39;/landing/bg.JFIF&#39;)" }}
       >
         {/* Overlay */}
         <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-black to-transparent opacity-100"></div>
@@ -20,7 +20,7 @@ const Herosection = () => {
               Gain hands-on experience with real-world projects and expert
               mentorship.
             </p>
-            <div className="flex w-full md:w-[70%] xl:w-[60%] md:gap-3 gap-1">
+            <div className="flex w-full md:w-[75%] xl:w-[60%] md:gap-3 gap-1">
               <button className="w-1/2 bg-green-800 flex items-center justify-evenly text-white  md:px-4 py-2 rounded-full">
                 <Image
                   src="/icons/explore.svg"

@@ -71,7 +71,7 @@ const VisionMission = () => {
           <div className="w-[90%] mx-auto grid grid-cols-2  md:grid-cols-4 gap-2">
             <div className="relative   border border-[#9D9D9D80] rounded-2xl bg-[#313131] p-5">
               {/* Background Image with Opacity */}
-              <div className="absolute inset-0 bg-[url('/contactuspage/image.png')] bg-cover bg-center  opacity-10"></div>
+              <div className="absolute inset-0 bg-[url(&#39;/contactuspage/image.png&#39;)] bg-cover bg-center  opacity-10"></div>
               <div className="text-center">
                 {" "}
                 <em className="text-[28px] text-white font-medium">92%</em>
@@ -80,7 +80,7 @@ const VisionMission = () => {
             </div>
             <div className="relative   border border-[#9D9D9D80] rounded-2xl bg-[#313131] p-5">
               {/* Background Image with Opacity */}
-              <div className="absolute inset-0 bg-[url('/contactuspage/image.png')] bg-cover bg-center  opacity-10"></div>
+              <div className="absolute inset-0 bg-[url(&#39;/contactuspage/image.png&#39;)] bg-cover bg-center  opacity-10"></div>
               <div className="text-center">
                 {" "}
                 <em className="text-[28px] text-white font-medium">24</em>
@@ -89,7 +89,7 @@ const VisionMission = () => {
             </div>{" "}
             <div className="relative   border border-[#9D9D9D80] rounded-2xl bg-[#313131] p-5">
               {/* Background Image with Opacity */}
-              <div className="absolute inset-0 bg-[url('/contactuspage/image.png')] bg-cover bg-center  opacity-10"></div>
+              <div className="absolute inset-0 bg-[url(&#39;/contactuspage/image.png&#39;)] bg-cover bg-center  opacity-10"></div>
               <div className="text-center">
                 {" "}
                 <em className="text-[28px] text-white font-medium">14.2K+</em>
@@ -98,7 +98,7 @@ const VisionMission = () => {
             </div>{" "}
             <div className="relative   border border-[#9D9D9D80] rounded-2xl bg-[#313131] p-5">
               {/* Background Image with Opacity */}
-              <div className="absolute inset-0 bg-[url('/contactuspage/image.png')] bg-cover bg-center  opacity-10"></div>
+              <div className="absolute inset-0 bg-[url(&#39;/contactuspage/image.png&#39;)] bg-cover bg-center  opacity-10"></div>
               <div className="text-center">
                 {" "}
                 <em className="text-[28px] text-white font-medium">12+</em>

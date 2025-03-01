@@ -1,4 +1,4 @@
-// import Mentorsprofilecomponent from '@/components/reusable/Mentorsprofilecomponent'
+// import Mentorsprofilecomponent from &#39;@/components/reusable/Mentorsprofilecomponent&#39;
 
 import MentorsProfileComponent from "@/components/reusable/Mentorsprofilecomponent";
 import React from "react";
@@ -17,45 +17,30 @@ const page = () => {
   ];
   return (
     <>
-      {/* <MentorsProfileComponent
-        profileImage="/landing/james.svg"
-        name="James Wildon"
-        title="Senior Developer" 
-        aboutMe={[
-          // ✅ Change `about` to `aboutMe`
-          "Experienced in web development.",
-          "Specialized in React and Next.js.",
-        ]}
-        experience="5+ years"
-        skills={["React", "Next.js", "JavaScript"]}
-        socialLinks={{
-          facebook: "https://facebook.com",
-          instagram: "https://instagram.com",
-          linkedin: "https://linkedin.com",
-        }}
-        portfolioImages={["/path/to/portfolio1.jpg", "/path/to/portfolio2.jpg"]}
-        backgroundImage="/path/to/background.jpg"
-        separatorImage="/path/to/separator.jpg"
-      /> */}
-      <MentorsProfileComponent
-        profileImage="/landing/james.svg"
-        name="James Wildon"
-        role="Senior Developer" // ✅ Change title -> role
-        aboutMe={[
-          "Experienced in web development.",
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas justo metus, gravida vitae vestibulum eu, vestibulum quis tellus. Praesent bibendum consequat lorem porttitor consequat.",
-        ]}
-        experience="I have 5+ years of experience in Data Science."
-        skills={["React", "Next.js", "JavaScript"]}
-        socialLinks={{
-          facebook: "https://facebook.com",
-          instagram: "https://instagram.com",
-          linkedin: "https://linkedin.com",
-        }}
-        portfolioImages={portfolioImages} // ✅ Pass the array
-        backgroundImage="/path/to/background.jpg"
-        separatorImage="/path/to/separator.jpg"
-      />
+    
+    <MentorsProfileComponent
+  profileImage="/landing/james.svg"
+  name="James Wildon"
+  title="Senior Developer" // ✅ Add this (was missing)
+  role="Senior Developer"
+  aboutMe={[
+    "Experienced in web development.",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas justo metus, gravida vitae vestibulum eu, vestibulum quis tellus. Praesent bibendum consequat lorem porttitor consequat.",
+  ]}
+  experience="I have 5+ years of experience in Data Science."
+  skills={["React", "Next.js", "JavaScript"]}
+  socialLinks={{
+    facebook: "https://facebook.com",
+    instagram: "https://instagram.com",
+    linkedin: "https://linkedin.com",
+  }}
+  portfolioImages={portfolioImages} // ✅ Pass the array
+  backgroundImage="/path/to/background.jpg"
+  separatorImage="/path/to/separator.jpg"
+  dividerImage="/path/to/divider.jpg" // ✅ Add this
+  images={["/path/to/image1.jpg", "/path/to/image2.jpg"]} // ✅ Add this
+/>
+
     </>
   );
 };
