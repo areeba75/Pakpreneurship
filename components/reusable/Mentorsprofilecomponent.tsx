@@ -58,7 +58,7 @@ const MentorsProfileComponent: React.FC<MentorsProfileProps> = ({
         <div className="relative flex md:w-[70%] items-center gap-4 border border-[#9D9D9D80] rounded-2xl p-4 bg-[#313131] overflow-hidden h-[365px]">
           <div
             className="absolute inset-0 bg-cover bg-center opacity-10 "
-            style={{ backgroundImage: "url(&#39;/programdetail/success-bg.png&#39;)" }}
+            style={{ backgroundImage: "url('/programdetail/success-bg.png')" }}
           ></div>
           <div className="w-full h-full space-y-2 ">
             <p>About Me!</p>

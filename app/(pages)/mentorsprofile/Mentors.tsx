@@ -20,7 +20,7 @@ const Mentorsprofilecomponent = () => {
           </div>
           <div className="relative flex md:w-[70%] items-center gap-4  border border-[#9D9D9D80] rounded-2xl p-4 bg-[#313131] overflow-hidden">
             {/* Background Image with Opacity */}
-            <div className="absolute inset-0 bg-[url(&#39;/contactuspage/image.png&#39;)] bg-cover bg-center  opacity-10"></div>
+            <div className="absolute inset-0 bg-[url('/contactuspage/image.png')] bg-cover bg-center  opacity-10"></div>
             <div className=" space-y-2">
               <p>About Me!</p>
 
@@ -89,7 +89,7 @@ const Mentorsprofilecomponent = () => {
         <div className="mt-5">
           <div className="relative mt-5 border border-[#9D9D9D80] rounded-2xl bg-[#313131] overflow-hidden">
             {/* Background Image with Opacity */}
-            <div className="absolute inset-0 bg-[url(&#39;/contactuspage/image.png&#39;)] bg-cover bg-center  opacity-10"></div>{" "}
+            <div className="absolute inset-0 bg-[url('/contactuspage/image.png')] bg-cover bg-center  opacity-10"></div>{" "}
             <p className="mx-4 my-2">My Portfolio</p>
             <div className="grid grid-cols-2 md:grid-cols-3 items-center justify-items-center m-4">
               <div className="flex items-center justify-center w-full h-[120px] border border-gray-600">

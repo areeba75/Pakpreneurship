@@ -23,7 +23,7 @@ const FaqSection = () => {
                   question: "Who can join PakPreneurship Programs?",
 
                   answer:
-                "PakPreneurship programs are open to anyone.It’s for high school students globally, teaching them to brainstorm and pitch business ideas.For early-stage entrepreneurs—think small business owners or  founders—with no strict age or degree rules, just a solid idea and commitment.Depends on what you’re after—student-focused ones might need you in school, while others just want hustle, an idea, or some skin in the game."                },
+                "PakPreneurship programs are open to anyone.Its for high school students globally, teaching them to brainstorm and pitch business ideas.For early-stage entrepreneurs—think small business owners or  founders—with no strict age or degree rules, just a solid idea and commitment.Depends on what you’re after—student-focused ones might need you in school, while others just want hustle, an idea, or some skin in the game."                },
                 {
                   question:
         "What kind of Support do you provide?",

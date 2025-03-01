@@ -30,36 +30,36 @@ const Header = () => {
       <div className="hidden lg:flex gap-8">
         <ul className="flex space-x-2 xl:space-x-6 text-white">
           <Link href="/">
-            <li className=" hover:text-green-500 hover:after:content-[&#39;&#39;] hover:after:block hover:after:w-10 hover:after:h-[1px] hover:after:bg-green-500 hover:after:mt-0">
+            <li className=" hover:text-green-500  hover:after:block hover:after:w-10 hover:after:h-[1px] hover:after:bg-green-500 hover:after:mt-0">
               Home
             </li>
           </Link>
           <Link href="/exploreprograms">
-            <li className=" hover:text-green-500 hover:after:content-[&#39;&#39;] hover:after:block hover:after:w-10 hover:after:h-[1px] hover:after:bg-green-500 hover:after:mt-0">
+            <li className=" hover:text-green-500 hover:after:content-[''] hover:after:block hover:after:w-10 hover:after:h-[1px] hover:after:bg-green-500 hover:after:mt-0">
               {" "}
               Programs
             </li>{" "}
           </Link>
           <Link href="/mentorsflow">
-            <li className=" hover:text-green-500 hover:after:content-[&#39;&#39;] hover:after:block hover:after:w-10 hover:after:h-[1px] hover:after:bg-green-500 hover:after:mt-0">
+            <li className=" hover:text-green-500 hover:after:content-[''] hover:after:block hover:after:w-10 hover:after:h-[1px] hover:after:bg-green-500 hover:after:mt-0">
               {" "}
               Mentors
             </li>
           </Link>
           <Link href="/howitworks">
-            <li className=" hover:text-green-500 hover:after:content-[&#39;&#39;] hover:after:block hover:after:w-10 hover:after:h-[1px] hover:after:bg-green-500 hover:after:mt-0">
+            <li className=" hover:text-green-500 hover:after:content-[''] hover:after:block hover:after:w-10 hover:after:h-[1px] hover:after:bg-green-500 hover:after:mt-0">
               {" "}
               How it Works
             </li>
           </Link>
           <Link href="/aboutus">
-            <li className=" hover:text-green-500 hover:after:content-[&#39;&#39;] hover:after:block hover:after:w-10 hover:after:h-[1px] hover:after:bg-green-500 hover:after:mt-0">
+            <li className=" hover:text-green-500 hover:after:content-[''] hover:after:block hover:after:w-10 hover:after:h-[1px] hover:after:bg-green-500 hover:after:mt-0">
               {" "}
               About Us
             </li>
           </Link>
           <Link href="/contactus">
-            <li className=" hover:text-green-500 hover:after:content-[&#39;&#39;] hover:after:block hover:after:w-10 hover:after:h-[1px] hover:after:bg-green-500 hover:after:mt-0">
+            <li className=" hover:text-green-500 hover:after:content-[''] hover:after:block hover:after:w-10 hover:after:h-[1px] hover:after:bg-green-500 hover:after:mt-0">
               {" "}
               Contact Us
             </li>

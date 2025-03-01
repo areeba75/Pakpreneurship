@@ -1,7 +1,6 @@
 import React from "react";
 import HeroSection from "./components/Herosection";
 import Explorementors from "./components/Explorementors";
-// import HeroSection from &#39;./components/HeroSection&#39;
 
 const page = () => {
   return (

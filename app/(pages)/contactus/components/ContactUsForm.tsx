@@ -373,7 +373,7 @@ const ContactUsForm = () => {
               {/* Email Section */}
               <div className="relative flex items-center gap-4  border border-[#9D9D9D80] rounded-2xl p-4 bg-[#313131] overflow-hidden">
                 {/* Background Image with Opacity */}
-                <div className="absolute inset-0 bg-[url(&#39;/contactuspage/image.png&#39;)] bg-cover bg-center opacity-10"></div>
+                <div className="absolute inset-0 bg-[url('/contactuspage/image.png')] bg-cover bg-center opacity-10"></div>
                 <div className="p-4 md:p-6 bg-white bg-opacity-20 rounded-lg">
                   <Image
                     src="/contactuspage/letter.svg"
@@ -393,7 +393,7 @@ const ContactUsForm = () => {
               {/* Phone Section */}
               <div className="relative flex  items-center gap-4  border border-[#9D9D9D80] rounded-2xl p-4 bg-[#313131] overflow-hidden">
                 {/* Background Image with Opacity */}
-                <div className="absolute inset-0 bg-[url(&#39;/contactuspage/image.png&#39;)] bg-cover bg-center  opacity-10"></div>
+                <div className="absolute inset-0 bg-[url('/contactuspage/image.png')] bg-cover bg-center  opacity-10"></div>
                 <div className="p-4 md:p-6 bg-white  bg-opacity-20 rounded-lg">
                   <Image
                     src="/contactuspage/Map-Point.svg"
@@ -411,7 +411,7 @@ const ContactUsForm = () => {
               {/* Website Section */}
               <div className="relative flex items-center gap-4  border border-[#9D9D9D80] rounded-2xl p-4 bg-[#313131] overflow-hidden">
                 {/* Background Image with Opacity */}
-                <div className="absolute inset-0 bg-[url(&#39;/contactuspage/image.png&#39;)] bg-cover bg-center  opacity-10"></div>
+                <div className="absolute inset-0 bg-[url('/contactuspage/image.png')] bg-cover bg-center  opacity-10"></div>
                 <div className="p-4 md:p-6 bg-white bg-opacity-20 rounded-lg">
                   <Image
                     src="/contactuspage/phone.svg"
