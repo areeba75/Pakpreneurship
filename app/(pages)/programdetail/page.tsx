@@ -6,7 +6,8 @@ import Image from "next/image";
 import CurriculumModules from "./components/CurriculumModules";
 import ExpertMentors from "./components/ExpertMentors";
 import ExpertSuccessStories from "./components/ExpertSuccessStories";
-import FAQ from "@/components/reusable/FAQ";
+import FAQ from "../../../components/reusable/FAQ";
+// import FAQ from "@/components/reusable/FAQ";
 type Tab = {
   label: string;
   id: string;

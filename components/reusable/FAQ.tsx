@@ -1,11 +1,13 @@
 "use client"
-import {
-  Accordion,
-  AccordionItem,
-  AccordionTrigger,
-  AccordionContent,
-} from "@/components/ui/accordion";
+// import {
+//   Accordion,
+//   AccordionItem,
+//   AccordionTrigger,
+//   AccordionContent,
+// } from "@/components/ui/accordion";
 import Image from "next/image";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "../ui/accordion";
+// import { AccordionItem } from "@radix-ui/react-accordion";
 // import { useState } from "react";
 
 interface FAQItem {

@@ -1,5 +1,6 @@
 import React from "react";
-import FAQ from "@/components/reusable/FAQ";
+import FAQ from "../../../../components/reusable/FAQ";
+// import FAQ from "./components/reusable/FAQ";
 
 const FaqSection = () => {
   return (

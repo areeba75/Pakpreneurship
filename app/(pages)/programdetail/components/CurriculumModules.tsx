@@ -1,6 +1,7 @@
-import ProgramDetailAccordian from "@/components/reusable/ProgramDetailAccordian";
+// import ProgramDetailAccordian from "../../../components/reusable/ProgramDetailAccordian";
 import Image from "next/image";
 import React from "react";
+import ProgramDetailAccordian from "../../../../components/reusable/ProgramDetailAccordian";
 
 const CurriculumModules = () => {
   return (
