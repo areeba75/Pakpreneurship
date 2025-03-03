@@ -1,9 +1,6 @@
 "use client";
 import React from "react";
-// import Image from "next/image";
-// import { ScrollArea } from "@/components/ui/scroll-area";
-// import { Button } from "@/components/ui/button";
-// import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+
 import { IoIosArrowDropright } from "react-icons/io";
 import Image from "next/image";
 import { Sheet, SheetContent, SheetTrigger } from "../../../components/ui/sheet";
