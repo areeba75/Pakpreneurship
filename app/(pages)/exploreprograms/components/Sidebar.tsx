@@ -1,9 +1,9 @@
-import { Checkbox } from "@/components/ui/checkbox";
-// import { Input } from "@/components/ui/input";
-import { ScrollArea } from "@/components/ui/scroll-area";
+
 
 import Image from "next/image";
 import React from "react";
+import { ScrollArea } from "../../../../components/ui/scroll-area";
+import { Checkbox } from "../../../../components/ui/checkbox";
 
 export const Sidebar = () => {
   return (

@@ -3,8 +3,9 @@ import {
   AccordionItem,
   AccordionTrigger,
   AccordionContent,
-} from "@/components/ui/accordion";
+} from "../ui/accordion";
 import Image from "next/image";
+// import { Accordion } from "../ui/accordion";
 
 interface FAQItem {
   heading: string;
@@ -53,7 +54,7 @@ export default function ProgramDetailAccordian({ items }: FAQProps) {
                       src="/icons/bullet.svg"
                       alt="bullet"
                       width={20}
-                      height={20}
+                      height={20} 
                       className="w-8 h-8 mr-2"
                     />
                     {item.line2}

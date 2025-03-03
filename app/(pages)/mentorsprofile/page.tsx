@@ -1,6 +1,6 @@
 // import Mentorsprofilecomponent from &#39;@/components/reusable/Mentorsprofilecomponent&#39;
 
-import MentorsProfileComponent from "@/components/reusable/Mentorsprofilecomponent";
+import MentorsProfileComponent from "../../../components/reusable/Mentorsprofilecomponent";
 import React from "react";
 
 const page = () => {
